@@ -1,0 +1,245 @@
+
+.d-flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+
+main{
+    background-color: var(--font-color);
+    color: var(--bg-color);
+}
+
+/* ///////// */
+
+hr{
+    background-color: var(--font-color);
+    width: 70%;
+    height: 1px;
+}
+
+
+section{
+    font-family: var(--font-family);
+    padding: 7% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+
+}
+/* Premiere section */
+
+main section:first-child{   
+  
+    border-top: 1px solid black;
+}
+/* Seconde section */
+main section:nth-last-of-type(1){
+    
+    margin: 10% 0%;
+}
+section h1{
+    font-family: var(--font-family);
+    font-weight: lighter;
+    font-size: 40px;
+    letter-spacing: 40px;
+
+}
+
+h2{
+    text-decoration: underline;
+}
+
+
+section p{
+    
+    font-size: 20px;
+    text-decoration: underline;
+
+}
+
+   
+ 
+
+form{
+    margin: 5% 0%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+form hr{
+    margin-top: 3%;
+    margin-bottom: 3%;
+background-color: #000000;
+}
+
+form div{
+   
+    font-family: var(--font-family);
+    margin: 0% 0% 1% 0%;
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    font-family: var(--font-family);
+    font-weight: lighter;
+    padding: 1% 1%;
+    border: 1px solid;
+}
+form select{
+    padding: 1% 1%;
+    border: 1px solid;
+    border-radius: 8px;
+}
+option{
+    height: 10px;
+}
+
+form textarea{
+    resize: vertical;
+    border: 1px solid;
+}
+
+.d-flex-row div{
+    width: 49%;
+}
+
+
+#typeProjet input{
+    border-top: 0px;
+}
+
+#typeProjet #flashOptions input{
+border-top: 1px solid black;
+border-right: 0px;
+border-left:0px;
+border-bottom: 0px;
+}
+
+#submitBouton{
+        margin: 5% 0%;
+        width: 100%;
+        justify-content: center !important;
+        align-items: center !important;    
+}
+#submitBouton button{
+    box-shadow: 7px 7px 1px 2px rgba(0, 0, 255, 0.118);
+    background-color: white;
+font-style: italic;    
+font-family: 'Amaranth', sans-serif;
+    padding: 3% 10%;
+    font-size: 20px;
+}
+form p{
+ text-align: center;
+}
+
+label{
+    font-family: var(--font-family);
+    font-size: 18px;
+}
+
+#flashOptions{
+    border: 1px solid black;
+}
+
+#flashOptions .image-container{
+    overflow-x: scroll;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+}
+
+#flashOptions .image-item{
+    width: 20%;
+}
+.selected{
+border: 3px solid rgb(182, 3, 0);
+}
+
+/* Laptop */
+@media (max-width: 1332px) and (min-width: 769px) {
+
+    section h1{
+        font-size: 30px;
+        letter-spacing: 20px;
+    
+    }
+    section p{
+        font-size: 15px;
+    }
+
+}
+
+/* Tab */
+@media (max-width: 768px) {
+
+    section h1{
+        font-size: 17px;
+        letter-spacing: 13px;
+        padding: 10% 0%;
+
+    }
+    section p{
+        padding: 10% 0%;
+        font-size: 10px;
+    }
+    
+}
+
+/* Mobile L */
+@media (max-width: 426px) {
+
+    section h1{
+        font-size: 16px;
+        letter-spacing: 11px;
+        padding: 25% 0%;
+    
+    }
+    section p{
+        font-size: 15px;
+        padding: 25% 0%;
+    }
+
+
+    
+}
+
+/* Mobile M */
+@media (max-width: 376px) {
+
+   
+    section h1{
+        font-size: 16px;
+        letter-spacing: 10px;
+    
+    }
+  
+
+   
+
+}
+
+/* Mobile S */
+@media (max-width: 321px) {
+
+   
+    section h1{
+        font-size: 14px;
+        letter-spacing: 8px;
+        padding: 30% 0%;
+
+    
+    }
+  
+    section p{
+        font-size: 13px;
+        padding: 30% 0%;
+    }
+
+  
+}
