@@ -20,6 +20,7 @@
             <p>Chaque flash est unique</p>
         </section>
         <hr>
+
         <section>
             <div id="flashImage">
                 <!-- Les images seront affichées ici -->
@@ -51,9 +52,9 @@
                         images.forEach(imagePath => {
                             const image = new Image();
                             image.src = imagePath.replace(/\./, '');
-
                             const anchor = document.createElement('a');
-                            anchor.href = `./contact.php?flash=${encodeURIComponent(imagePath)}`;
+                            anchor.href = `./contact.php?flash=${encodeURIComponent(imagePath)}#divProjet`;
+                            anchor.target = '_blank';
                             anchor.appendChild(image);
 
                             imageContainer.appendChild(anchor);
