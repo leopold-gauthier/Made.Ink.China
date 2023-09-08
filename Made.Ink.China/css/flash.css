@@ -1,7 +1,4 @@
-main{
-    background-color: var(--bg-color);
-    color: var(--font-color);
-}
+
 
 /* ///////// */
 
@@ -51,6 +48,7 @@ section p{
 }
 
 #pagination{
+
     font-size: 20px;
     display: flex;
     flex-direction: row;
@@ -60,8 +58,9 @@ section p{
 }
 
 #pagination a{
+    color: black !important;
+
     margin: 0% 50%;
-    color: var(--font-color);
     text-decoration: none;
 }
 

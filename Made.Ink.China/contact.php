@@ -1,3 +1,5 @@
+<?php include_once("./include/already_sent.php") ?>
+
 <!DOCTYPE html>
 <html lang="fr-FR">
 
@@ -319,7 +321,9 @@
             });
     </script>
 
-
+    <footer>
+        <?php include_once("./include/footer-include.php"); ?>
+    </footer>
 </body>
 
 </html>

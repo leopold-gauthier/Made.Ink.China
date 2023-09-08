@@ -33,12 +33,7 @@ section{
     bottom: 0;
 
 }
-/* Premiere section */
 
-main section:first-child{   
-  
-    border-top: 1px solid black;
-}
 /* Seconde section */
 main section:nth-last-of-type(1){
     
@@ -214,7 +209,9 @@ border: 3px solid rgb(182, 3, 0);
 /* Mobile M */
 @media (max-width: 376px) {
 
-   
+    section{
+        padding: 10% 0%;
+    }
     section h1{
         font-size: 16px;
         letter-spacing: 10px;
@@ -229,7 +226,9 @@ border: 3px solid rgb(182, 3, 0);
 /* Mobile S */
 @media (max-width: 321px) {
 
-   
+    section{
+        padding: 16% 0%;
+    }
     section h1{
         font-size: 14px;
         letter-spacing: 8px;
@@ -237,11 +236,16 @@ border: 3px solid rgb(182, 3, 0);
 
     
     }
-  
+    section h2{
+        font-size: 14px;
+    }
+    label{
+        font-size: 11px;
+
+    }
     section p{
         font-size: 13px;
         padding: 30% 0%;
     }
 
-  
 }
